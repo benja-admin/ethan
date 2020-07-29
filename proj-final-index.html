@@ -61,9 +61,54 @@
   <!-- content-->
 
   <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
       <div class="row">
-        <div class="col-sm-12 col-md-8">col-8</div>
-        <div class="col-sm-12 col-md-4">col-4</div>
+        <div class="col-sm-12 col-md-8">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Left</button>
+                <button type="button" class="btn btn-secondary">Middle</button>
+                <button type="button" class="btn btn-secondary">Right</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...2</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...3</div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ad Space</h5>
+            <p class="card-text">You need this thing.
+            </p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div></div>
       </div>
   </div>
 
@@ -71,6 +116,12 @@
 
   <!--footer-->
 
+  <footer class="mastfoot mt-auto">
+    <div class="inner text-center pt-5">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
+          href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
 
   <!--end footer-->
   <!--end page-->
